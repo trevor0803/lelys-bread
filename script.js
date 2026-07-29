@@ -81,14 +81,32 @@
   function setupNavigation() {
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.site-nav');
-    toggle?.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
+    if (!toggle || !nav) return;
+
+    const renderToggle = isOpen => {
+      toggle.innerHTML = `<span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="nav-toggle-label">${isOpen ? 'Close Pages' : 'Browse Pages'}</span>`;
+      toggle.setAttribute('aria-label', isOpen ? 'Close site navigation' : 'Open site navigation');
       toggle.setAttribute('aria-expanded', String(isOpen));
+    };
+
+    renderToggle(false);
+
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      renderToggle(isOpen);
     });
-    nav?.querySelectorAll('a').forEach(item => item.addEventListener('click', () => {
+
+    nav.querySelectorAll('a').forEach(item => item.addEventListener('click', () => {
       nav.classList.remove('open');
-      toggle?.setAttribute('aria-expanded', 'false');
+      renderToggle(false);
     }));
+
+    document.addEventListener('click', event => {
+      if (!nav.classList.contains('open')) return;
+      if (nav.contains(event.target) || toggle.contains(event.target)) return;
+      nav.classList.remove('open');
+      renderToggle(false);
+    });
   }
 
   function addStructuredData() {
