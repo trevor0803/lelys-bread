@@ -1,0 +1,10 @@
+{
+  "name": "lelys-bread",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium storefront and SMS order-request site for Lely's Bread.",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  }
+}
