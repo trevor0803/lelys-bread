@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#173f2b" />
-  <title>Lely's Bread | Fresh-Milled, Small-Batch Baked Goods</title>
-  <meta name="description" content="Fresh-milled flour, thoughtful ingredients, and small-batch breads and baked goods made with care in Wellington, Florida. Text Lely's Bread to request an order." />
-  <meta property="og:title" content="Lely's Bread | Made With Love. Made For You." />
-  <meta property="og:description" content="Fresh-milled flour, real ingredients, and small-batch baking. Browse the current menu and text to request an order." />
+  <title>Lely's Bread | Fresh-Milled Bread in Wellington, Florida</title>
+  <meta name="description" content="Fresh-milled flour, simple ingredients, and small-batch breads and baked goods made with purpose in Wellington, Florida." />
+  <meta property="og:title" content="Lely's Bread | Freshly Milled. Naturally Nourishing." />
+  <meta property="og:description" content="Small-batch bread and baked goods made with freshly milled flour, simple ingredients, and a whole lot of love." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/cinnamon-rolls-hero.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,18 +17,21 @@
   <script defer src="/site-config.js"></script>
   <script defer src="/script.js"></script>
 </head>
-<body>
-  <div class="announcement">Fresh-milled flour · Real ingredients · Small-batch baking</div>
+<body data-page="home">
+  <div class="announcement">Freshly milled · Naturally nourishing · Baked with purpose</div>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Lely's Bread home">
+    <a class="brand" href="/" aria-label="Lely's Bread home">
       <img src="/assets/lelys-logo.svg" alt="Lely's Bread logo" />
       <span><strong>Lely's Bread</strong><small>Fresh-milled baked goods</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#menu">Menu</a><a href="#why-fresh">Why fresh-milled?</a><a href="#ingredients">Ingredients</a><a href="#faq">FAQ</a>
-      <button class="button button-small js-order" type="button">Request an order</button>
+      <a class="active" href="/">Home</a>
+      <a href="/menu.html">Menu</a>
+      <a href="/about.html">About</a>
+      <a href="/fresh-milled.html">Why Fresh-Milled?</a>
+      <a class="button button-small js-order" href="#">Order Now</a>
     </nav>
   </header>
 
@@ -36,41 +39,92 @@
     <section class="hero section-shell">
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Baked with purpose in Wellington, Florida</p>
-        <h1>Bread that starts with the <em>grain.</em></h1>
-        <p class="hero-lede">Fresh-milled flour. Thoughtful ingredients. Small batches made for families who want baked goods that taste as good as they feel.</p>
-        <div class="hero-actions"><button class="button js-order" type="button">Request an order by text</button><a class="text-link" href="#menu">See what we're baking <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-proof" aria-label="Lely's Bread highlights"><div><strong>Fresh-milled</strong><span>Flour milled close to baking</span></div><div><strong>Small-batch</strong><span>Made with care, not on an assembly line</span></div><div><strong>Real ingredients</strong><span>Simple choices you can feel good about</span></div></div>
+        <h1>Real bread starts with the <em>grain.</em></h1>
+        <p class="hero-lede">Freshly milled flour, simple ingredients, and small batches made to bring real food back to the family table.</p>
+        <div class="hero-actions">
+          <a class="button js-order" href="#">Order This Week's Bake</a>
+          <a class="text-link" href="/about.html">Read our story <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Lely's Bread highlights">
+          <div><strong>Freshly milled</strong><span>Whole grains milled close to baking</span></div>
+          <div><strong>Small-batch</strong><span>Made with attention and care</span></div>
+          <div><strong>Family-founded</strong><span>Born from a desire to nourish our own family</span></div>
+        </div>
       </div>
       <div class="hero-visual reveal" data-delay="100">
-        <div class="hero-image-wrap"><img id="hero-product-image" src="/assets/cinnamon-rolls-hero.svg" alt="Freshly baked cinnamon rolls with icing" /><div class="hero-image-shade"></div><div class="hero-card"><span>This week's bake</span><strong id="hero-product-name">Fresh-baked favorites</strong><button class="mini-link js-order" type="button">Text to request yours →</button></div></div>
+        <div class="hero-image-wrap">
+          <img id="hero-product-image" src="/assets/cinnamon-rolls-hero.svg" alt="Freshly baked cinnamon rolls with icing" />
+          <div class="hero-image-shade"></div>
+          <div class="hero-card">
+            <span>This week's bake</span>
+            <strong id="hero-product-name">Fresh-baked favorites</strong>
+            <a class="mini-link js-order" href="#">Order on Hotplate →</a>
+          </div>
+        </div>
         <div class="seal" aria-hidden="true"><span>Fresh milled</span><strong>♡</strong><span>Made with love</span></div>
       </div>
     </section>
 
-    <section class="marquee" aria-label="Brand promise"><div class="marquee-track"><span>Real ingredients</span><i>✦</i><span>Real nutrition</span><i>✦</i><span>Real flavor</span><i>✦</i><span>Made with love</span><i>✦</i><span>Real ingredients</span><i>✦</i><span>Real nutrition</span><i>✦</i><span>Real flavor</span><i>✦</i><span>Made with love</span><i>✦</i></div></section>
+    <section class="marquee" aria-label="Brand promise"><div class="marquee-track"><span>Real ingredients</span><i>✦</i><span>Real nourishment</span><i>✦</i><span>Real flavor</span><i>✦</i><span>Made with love</span><i>✦</i><span>Real ingredients</span><i>✦</i><span>Real nourishment</span><i>✦</i><span>Real flavor</span><i>✦</i><span>Made with love</span><i>✦</i></div></section>
 
     <section class="menu-section section-shell" id="menu">
-      <div class="section-heading reveal"><div><p class="eyebrow"><span></span> The current menu</p><h2>Small batches.<br /><em>Big comfort.</em></h2></div><div class="section-intro"><p>Our offerings may change from one bake to the next. Browse what's available, then tap any item to open a prefilled text message and request your order.</p><a class="text-link" id="hotplate-link" href="#" target="_blank" rel="noreferrer">View the original Hotplate menu ↗</a></div></div>
-      <div id="menu-status" class="menu-status" role="status">Loading the latest menu from Hotplate…</div><div id="product-grid" class="product-grid" aria-live="polite"></div>
-      <div class="menu-fallback" id="menu-fallback" hidden><div><p class="eyebrow"><span></span> Menu changes often</p><h3>Want to know what's coming out of the oven?</h3><p>Send a quick text and Lely's Bread will share the current selection, pickup details, and availability.</p></div><button class="button js-order" type="button">Text for this week's menu</button></div>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span></span> The current bread drop</p><h2>Small batches.<br /><em>Big comfort.</em></h2></div>
+        <div class="section-intro"><p>Quantities are limited and the menu changes with each bake. Each product appears once, with available sizes and quantities selected after you open Hotplate.</p><a class="text-link" href="/menu.html">See the full menu →</a></div>
+      </div>
+      <div id="menu-status" class="menu-status" role="status">Loading the latest menu from Hotplate…</div>
+      <div id="product-grid" class="product-grid product-grid-featured" aria-live="polite"></div>
+      <div class="center-actions"><a class="button js-order" href="#">Order on Hotplate</a></div>
+      <div class="menu-fallback" id="menu-fallback" hidden><div><p class="eyebrow"><span></span> Menu changes often</p><h3>See what is coming out of the oven.</h3><p>Open the current Hotplate bread drop for availability, pickup details, and ordering.</p></div><a class="button js-order" href="#">View Current Menu</a></div>
     </section>
 
-    <section class="why-section" id="why-fresh"><div class="section-shell why-grid"><div class="why-image reveal"><img src="/assets/cinnamon-rolls-detail.svg" alt="Close-up of iced cinnamon rolls" loading="lazy" /><div class="why-image-note">Milled close to baking for fuller flavor and whole-grain character.</div></div><div class="why-copy reveal" data-delay="100"><p class="eyebrow light"><span></span> Why fresh-milled flour?</p><h2>Because flour is at its best when it is <em>fresh.</em></h2><p class="why-lede">Fresh milling keeps more of the whole grain together and brings a deeper, naturally satisfying flavor to every loaf, roll, and treat.</p><div class="benefit-list"><article><span>01</span><div><h3>Whole-grain goodness</h3><p>The bran, germ, and endosperm remain part of the flour rather than being separated during refining.</p></div></article><article><span>02</span><div><h3>Naturally rich flavor</h3><p>Fresh flour has warmth, aroma, and character that long-stored flour simply cannot imitate.</p></div></article><article><span>03</span><div><h3>More satisfying texture</h3><p>Whole-grain fiber adds body and helps create baked goods that feel substantial, not empty.</p></div></article><article><span>04</span><div><h3>Made close to the moment</h3><p>We mill with baking in mind, then turn that flour into something worth sharing.</p></div></article></div><button class="outline-button" id="open-guide" type="button">See the fresh-milled guide</button></div></div></section>
+    <section class="story-preview">
+      <div class="section-shell story-preview-grid">
+        <div class="story-preview-copy reveal">
+          <p class="eyebrow light"><span></span> Our story</p>
+          <h2>It began with a desire to <em>nourish our family.</em></h2>
+          <p>As we learned about fresh-milled flour and began baking with more intentional ingredients, we experienced the difference for ourselves. What started in our own kitchen became a passion to share that same care with others.</p>
+          <p>Today, every Lely's Bread bake is made to help bring real food back to the table and serve our community one loaf at a time.</p>
+          <a class="outline-button link-button" href="/about.html">Meet Lely's Bread</a>
+        </div>
+        <div class="story-values reveal" data-delay="100">
+          <article><span>01</span><div><h3>Freshly milled</h3><p>Whole grains are milled close to bake time for fuller flavor and character.</p></div></article>
+          <article><span>02</span><div><h3>Naturally nourishing</h3><p>We choose straightforward ingredients with the family table in mind.</p></div></article>
+          <article><span>03</span><div><h3>Baked with purpose</h3><p>Every small batch is made with care, gratitude, and a whole lot of love.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="ingredients-section section-shell" id="ingredients"><div class="ingredient-title reveal"><p class="eyebrow"><span></span> The ingredient promise</p><h2>Nothing complicated.<br /><em>Everything considered.</em></h2></div><div class="ingredient-grid"><article class="ingredient-card reveal"><div class="ingredient-icon">🌾</div><h3>Fresh-milled whole grains</h3><p>Milled close to baking to preserve the grain's natural flavor, texture, and character.</p></article><article class="ingredient-card reveal" data-delay="70"><div class="ingredient-icon">🥚</div><h3>Thoughtfully chosen eggs</h3><p>Quality eggs selected for richer flavor and better baking.</p></article><article class="ingredient-card reveal" data-delay="140"><div class="ingredient-icon">🧈</div><h3>Real butter and dairy</h3><p>Classic ingredients that make baked goods taste the way they should.</p></article><article class="ingredient-card reveal" data-delay="210"><div class="ingredient-icon">♡</div><h3>Made for real people</h3><p>Small batches, personal care, and food designed to nourish and delight.</p></article></div></section>
+    <section class="ingredients-section section-shell">
+      <div class="ingredient-title reveal"><p class="eyebrow"><span></span> The ingredient promise</p><h2>Nothing complicated.<br /><em>Everything considered.</em></h2></div>
+      <div class="ingredient-grid">
+        <article class="ingredient-card reveal"><div class="ingredient-icon">🌾</div><h3>Fresh-milled whole grains</h3><p>Milled close to baking to preserve the grain's natural flavor, texture, and character.</p></article>
+        <article class="ingredient-card reveal" data-delay="70"><div class="ingredient-icon">🥚</div><h3>Thoughtful ingredients</h3><p>Simple, recognizable ingredients chosen because quality matters.</p></article>
+        <article class="ingredient-card reveal" data-delay="140"><div class="ingredient-icon">🧈</div><h3>Small-batch care</h3><p>Made in manageable batches rather than rushed down an assembly line.</p></article>
+        <article class="ingredient-card reveal" data-delay="210"><div class="ingredient-icon">♡</div><h3>Made for families</h3><p>Food designed to nourish, delight, and bring people back around the table.</p></article>
+      </div>
+    </section>
 
-    <section class="process-section"><div class="section-shell"><div class="process-heading reveal"><p class="eyebrow light"><span></span> From grain to your table</p><h2>Simple process.<br /><em>Meaningful difference.</em></h2></div><div class="process-grid"><article class="reveal"><span>1</span><h3>Mill</h3><p>Whole grains are milled close to bake time.</p></article><article class="reveal" data-delay="70"><span>2</span><h3>Mix</h3><p>Quality ingredients come together in small batches.</p></article><article class="reveal" data-delay="140"><span>3</span><h3>Bake</h3><p>Every item is baked with attention, not rushed.</p></article><article class="reveal" data-delay="210"><span>4</span><h3>Request</h3><p>Choose what sounds good and text to request your order.</p></article></div></div></section>
+    <section class="quote-section section-shell reveal"><div class="quote-mark">“</div><blockquote>Food was meant to nourish us, not just <em>fill us up.</em></blockquote><p>Lely's Bread</p></section>
 
-    <section class="quote-section section-shell reveal"><div class="quote-mark">“</div><blockquote>We believe food should nourish your body <em>and</em> delight your taste buds.</blockquote><p>Lely's Bread</p></section>
+    <section class="faq-section section-shell" id="faq">
+      <div class="faq-heading reveal"><p class="eyebrow"><span></span> Good to know</p><h2>Before you <em>order.</em></h2></div>
+      <div class="faq-list reveal" data-delay="100">
+        <details open><summary>How do I place an order?</summary><p>Tap any Order Now button to open Lely's Bread on Hotplate. Choose the items and quantities you want, then complete your order there.</p></details>
+        <details><summary>Does the menu change?</summary><p>Yes. Lely's Bread works in small batches, so items and flavors may change from one bread drop to the next.</p></details>
+        <details><summary>Why do products only appear once here?</summary><p>Different quantities or package sizes are grouped under one product on this website. You can choose the available option when you open Hotplate.</p></details>
+        <details><summary>What makes fresh-milled flour different?</summary><p>Fresh milling keeps the parts of the whole grain together and uses the flour close to milling, creating fuller flavor and a more substantial whole-grain texture.</p></details>
+      </div>
+    </section>
 
-    <section class="faq-section section-shell" id="faq"><div class="faq-heading reveal"><p class="eyebrow"><span></span> Good to know</p><h2>Before you <em>order.</em></h2></div><div class="faq-list reveal" data-delay="100"><details open><summary>How do I place an order?</summary><p>Tap “Request an order” or choose a menu item. Your phone's messaging app will open with a prefilled message. Send it to ask about availability and arrange the order.</p></details><details><summary>Is this an online checkout?</summary><p>No. This site is designed for personal order requests by text. Lely's Bread will confirm availability, timing, pickup, and payment details directly.</p></details><details><summary>Does the menu change?</summary><p>Yes. Lely's Bread bakes in small batches, so flavors and items can change. The menu section pulls current public product information from Hotplate whenever available.</p></details><details><summary>What makes fresh-milled flour different?</summary><p>It keeps the components of the whole grain together and is used close to milling, creating a fuller whole-grain flavor and a more substantial texture.</p></details></div></section>
-
-    <section class="cta-section"><div class="cta-image" aria-hidden="true"></div><div class="cta-content reveal"><p class="script-word">Made with love.</p><h2>Ready for something freshly baked?</h2><p>Text Lely's Bread to ask what's available and request your order.</p><button class="button button-cream js-order" type="button">Request an order by text</button></div></section>
+    <section class="cta-section"><div class="cta-image" aria-hidden="true"></div><div class="cta-content reveal"><p class="script-word">Made with love.</p><h2>Ready for this week's bake?</h2><p>Open the current bread drop to see availability and place your order.</p><a class="button button-cream js-order" href="#">Order Now</a></div></section>
   </main>
 
-  <footer class="site-footer"><div class="footer-brand"><img src="/assets/lelys-logo.svg" alt="Lely's Bread" /><div><strong>Lely's Bread</strong><span>Fresh-milled flour baked goods</span></div></div><div class="footer-links"><a href="#menu">Menu</a><a href="#why-fresh">Why fresh-milled?</a><a id="footer-hotplate-link" href="#" target="_blank" rel="noreferrer">Hotplate</a></div><p>Made with love. Made for you.</p></footer>
-  <button class="mobile-order js-order" type="button">Request an order</button>
-  <dialog class="guide-dialog" id="guide-dialog"><button class="dialog-close" id="close-guide" type="button" aria-label="Close guide">×</button><img src="/assets/fresh-milled-guide.svg" alt="Why choose fresh-milled flour guide from Lely's Bread" /></dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="/assets/lelys-logo.svg" alt="Lely's Bread" /><div><strong>Lely's Bread</strong><span>Fresh-milled baked goods</span></div></div>
+    <div class="footer-links"><a href="/menu.html">Menu</a><a href="/about.html">About</a><a href="/fresh-milled.html">Why Fresh-Milled?</a><a id="footer-hotplate-link" class="js-order" href="#">Order</a></div>
+    <p>Made with love. Made for you.</p>
+  </footer>
+  <a class="mobile-order js-order" href="#">Order Now</a>
 </body>
 </html>
